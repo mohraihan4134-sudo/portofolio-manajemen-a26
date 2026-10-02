@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+/* Smooth scrolling agar perpindahan antar section halus */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color: warna saat teks di-blok mouse (Hijau Sage) */
+::selection {
+  background-color: #7C9A72;
+  color: white;
+}
+
+/* Reset dasar untuk memastikan background dan teks sesuai desain minimalis */
+body {
+  background-color: #FAFAF9; /* Off-white hangat (Stone-50) */
+  color: #111111; /* Hitam pekat yang soft */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

@@ -19,7 +19,7 @@ export default function MemberCard({ anggota, isStruktur = false }: MemberCardPr
   };
 
   return (
-       <div className="group bg-white border border-[#E5E5E5] rounded-2xl p-8 text-center hover:border-[#7C9A72] hover:shadow-lg transition-all duration-300 min-h-[380px] flex flex-col">
+       <div className="group bg-white border border-[#E5E5E5] rounded-2xl p-6 sm:p-8 text-center hover:border-[#7C9A72] hover:shadow-lg transition-all duration-300 min-h-[320px] sm:min-h-[380px] flex flex-col">
       
       {/* Badge Jabatan (Hanya muncul jika isStruktur = true) */}
       {isStruktur && (

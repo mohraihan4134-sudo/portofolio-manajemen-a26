@@ -21,7 +21,7 @@ export default function AboutPage() {
       </section>
 
       {/* Deskripsi Kelas */}
-      <section className="max-w-4xl mx-auto py-12 px-6">
+      <section className="max-w-4xl mx-auto py-8 sm:py-12 px-4 sm:px-6">
         <div className="bg-white border border-[#E5E5E5] rounded-2xl p-8 md:p-12">
           <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6 tracking-tight">
             Siapa Kami?
@@ -40,8 +40,8 @@ export default function AboutPage() {
       </section>
 
       {/* Visi & Misi */}
-      <section className="max-w-4xl mx-auto py-12 px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <section className="max-w-4xl mx-auto py-8 sm:py-12 px-4 sm:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
           <div className="bg-white border border-[#E5E5E5] rounded-2xl p-8 hover:border-[#7C9A72] transition-colors duration-300">
             <div className="w-12 h-12 bg-[#7C9A72]/10 rounded-full flex items-center justify-center mb-6">
               <span className="text-2xl">🎯</span>
@@ -73,11 +73,11 @@ export default function AboutPage() {
       </section>
 
       {/* Statistik Kelas */}
-      <section className="max-w-4xl mx-auto py-12 px-6">
+      <section className="max-w-4xl mx-auto py-8 sm:py-12 px-4 sm:px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#111111] mb-12 tracking-tight">
           Statistik Kelas
         </h2>
-           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
           {stats.map((stat, index) => (
             <div
               key={index}

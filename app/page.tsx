@@ -51,7 +51,7 @@ export default function Home() {
         <div className="flex flex-col items-center">
           {/* Ketua Kelas (Puncak) */}
           {ketua && (
-            <div className="w-full max-w-sm mb-4">
+            <div className="w-full max-w-xs sm:max-w-sm mb-2 sm:mb-4">
               <MemberCard anggota={ketua} isStruktur={true} />
             </div>
           )}
@@ -60,14 +60,14 @@ export default function Home() {
           <div className="w-px h-8 bg-[#7C9A72]/30 mb-4"></div>
 
           {/* Sekretaris & Bendahara (Dasar Piramid) */}
-          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center sm:items-start justify-center">
             {sekretaris && (
-              <div className="w-full max-w-sm">
+              <div className="w-full max-w-xs sm:max-w-sm">
                 <MemberCard anggota={sekretaris} isStruktur={true} />
               </div>
             )}
             {bendahara && (
-              <div className="w-full max-w-sm">
+              <div className="w-full max-w-xs sm:max-w-sm">
                 <MemberCard anggota={bendahara} isStruktur={true} />
               </div>
             )}

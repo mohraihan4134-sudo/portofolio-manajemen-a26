@@ -111,7 +111,7 @@ export default function AboutPage() {
       {/* Footer */}
       <footer className="border-t border-[#E5E5E5] bg-white py-12 text-center">
         <p className="text-[#525252] text-sm">
-          &copy; 2026 Kelas Manajemen A 26. Dibuat dengan ❤️ menggunakan Next.js & Tailwind CSS.
+          &copy; 2026 Kelas Manajemen A 26.
         </p>
       </footer>
     </main>

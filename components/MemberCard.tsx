@@ -19,7 +19,7 @@ export default function MemberCard({ anggota, isStruktur = false }: MemberCardPr
   };
 
   return (
-    <div className="group bg-white border border-[#E5E5E5] rounded-2xl p-8 text-center hover:border-[#7C9A72] hover:shadow-lg transition-all duration-300">
+       <div className="group bg-white border border-[#E5E5E5] rounded-2xl p-8 text-center hover:border-[#7C9A72] hover:shadow-lg transition-all duration-300 min-h-[380px] flex flex-col">
       
       {/* Badge Jabatan (Hanya muncul jika isStruktur = true) */}
       {isStruktur && (
@@ -30,13 +30,21 @@ export default function MemberCard({ anggota, isStruktur = false }: MemberCardPr
         </div>
       )}
 
-      {/* Foto Anggota (Sedikit diperbesar agar lebih proporsional tanpa teks) */}
+            {/* Foto Anggota */}
       <div className="relative w-28 h-28 mx-auto mb-6">
-        <img
-          src={anggota.foto}
-          alt={anggota.nama}
-          className="w-full h-full rounded-full object-cover border-2 border-[#E5E5E5] group-hover:border-[#7C9A72] transition-colors duration-300"
-        />
+        {anggota.foto ? (
+          <img
+            src={anggota.foto}
+            alt={anggota.nama}
+            className="w-full h-full rounded-full object-cover border-2 border-[#E5E5E5] group-hover:border-[#7C9A72] transition-colors duration-300"
+          />
+        ) : (
+          <div className="w-full h-full rounded-full bg-[#E5E5E5] flex items-center justify-center border-2 border-[#E5E5E5]">
+            <span className="text-3xl text-[#7C9A72] font-bold">
+              {anggota.nama.charAt(0).toUpperCase()}
+            </span>
+          </div>
+        )}
       </div>
 
       {/* Nama */}
@@ -45,7 +53,7 @@ export default function MemberCard({ anggota, isStruktur = false }: MemberCardPr
       </h3>
 
       {/* Tombol Instagram */}
-      <div className="flex justify-center mt-2">
+      <div className="flex justify-center mt-auto">
         <a
           href={anggota.instagram}
           target="_blank"

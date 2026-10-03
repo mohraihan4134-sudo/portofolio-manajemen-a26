@@ -60,7 +60,7 @@ export default function Home() {
           <div className="w-px h-8 bg-[#7C9A72]/30 mb-4"></div>
 
           {/* Sekretaris & Bendahara (Dasar Piramid) */}
-          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-center">
+          <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
             {sekretaris && (
               <div className="w-full max-w-sm">
                 <MemberCard anggota={sekretaris} isStruktur={true} />

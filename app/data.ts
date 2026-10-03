@@ -220,7 +220,7 @@ export const anggotaKelas: Anggota[] = [
     nama: "Mohammad Arva Nadhif Wiryawan",
     jabatan: "Anggota",
     foto: "/images/arva.jpeg",
-    instagram: "https://www.instagram.com/n4dhivvv?stkn=MWxyZTg0MzVubnR4Ng==",
+    instagram: "https://www.instagram.com/nrrvaaaa?stkn=emxzcHQzcWN3",
   },
   {
     id: 31,
